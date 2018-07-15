@@ -1,0 +1,102 @@
+
+body{
+  width: 480px;
+  margin: 0 auto;
+}
+
+body *{
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+#a{
+  background: red;
+  height: 75px;
+}
+
+#b{
+  background: blue;
+  height: 150px;
+}
+
+#c{
+  background: blueviolet;
+}
+
+#d{
+  background: darkcyan;
+}
+
+#e{
+  background: yellow;
+}
+
+#f{
+  background: fuchsia;
+}
+
+#g{
+  background: gold;
+}
+
+#h{
+  background: hotpink;
+}
+
+#c, #d{
+  height: 125px;
+}
+
+.long{
+  width: 480px;
+}
+
+.half{
+  width: 240px;
+  height: 250px;
+}
+
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
+
+footer{
+  height: 80px;
+  clear: both;
+  overflow: hidden;
+}
+
+@media only screen and (min-width:480px){
+  body{
+    width:100%;
+  }
+  #a{
+    width:100%;
+    height: 100px;
+  }
+  #b{
+    width: 26%;
+    height: 600px;
+    float: left;
+  }
+  #c, #d{
+    width:37%;
+    height: 200px;
+    float: right;
+  }
+  .half{
+    width:18.5%;
+    float: right;
+  }
+
+  footer{
+    width:74% !important;
+    height: 150px;
+    float: right;
+    clear: right;
+  }
+}
